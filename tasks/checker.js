@@ -165,7 +165,7 @@ module.exports = {
         baselineDimensions.width * opts.proportion !== dimensions.width ||
         baselineDimensions.height * opts.proportion !== dimensions.height) {
       this.success = false;
-      grunt.log.error("Wrong Dimension @" + opts.proportion +  "x : " + name + " (" + (baselineDimensions.width * opts.proportion) + "x" + (baselineDimensions.width * opts.proportion) + "px != " + dimensions.width + "x" + dimensions.height + "px)");
+      grunt.log.error("Wrong Dimension @" + opts.proportion +  "x : " + name + " (" + (baselineDimensions.width * opts.proportion) + "x" + (baselineDimensions.height * opts.proportion) + "px != " + dimensions.width + "x" + dimensions.height + "px)");
     }
   }
 };
