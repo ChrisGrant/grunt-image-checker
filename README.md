@@ -3,6 +3,7 @@
 # grunt-image-check
 
 > Verify that your images are correctly resized for different resolutions
+> Updated to log files with wrong dimensions
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
