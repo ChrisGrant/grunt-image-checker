@@ -9,6 +9,7 @@
 var minimatch = require('minimatch');
 var sizeOf = require('image-size');
 var walk = require('walk');
+var grunt = require('grunt');
 
 module.exports = {
   /**
@@ -164,6 +165,7 @@ module.exports = {
         baselineDimensions.width * opts.proportion !== dimensions.width ||
         baselineDimensions.height * opts.proportion !== dimensions.height) {
       this.success = false;
+      grunt.log.error("Wrong Dimension @" + opts.proportion +  "x : " + name + " (" + (baselineDimensions.width * opts.proportion) + "x" + (baselineDimensions.width * opts.proportion) + "px != " + dimensions.width + "x" + dimensions.height + "px)");
     }
   }
 };
